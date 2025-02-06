@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermo Broodtrommel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+        }
+        button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e55a00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Thermo Broodtrommel - Houd je eten warm of koel!
+    </header>
+    <div class="container">
+        <h2>Altijd de perfecte temperatuur voor je lunch!</h2>
+        <p>Met onze innovatieve broodtrommel kun je je eten opwarmen of koelen wanneer jij dat wilt.</p>
+        <button onclick="warmUp()">Verwarmen</button>
+        <button onclick="coolDown()">Koelen</button>
+        <p id="status"></p>
+    </div>
+    <script>
+        function warmUp() {
+            document.getElementById("status").innerText = "Je eten wordt nu verwarmd!";
+        }
+        function coolDown() {
+            document.getElementById("status").innerText = "Je eten wordt nu gekoeld!";
+        }
+    </script>
+</body>
+</html>
